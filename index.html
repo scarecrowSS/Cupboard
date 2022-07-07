@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <!-- Marquiz script start -->
+        <!-- <script>
+            (function(w, d, s, o){
+            var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+                if (document.readyState !== 'loading') Marquiz.init(o);
+                else document.addEventListener("DOMContentLoaded", function() {
+                Marquiz.init(o);
+                });
+            };
+            d.head.insertBefore(j, d.head.firstElementChild);
+            })(window, document, 'script', {
+                host: '//quiz.marquiz.ru',
+                region: 'eu',
+                id: '62c6c0faec8a64003f1e15eb',
+                autoOpen: false,
+                autoOpenFreq: 'once',
+                openOnExit: false,
+                disableOnMobile: false
+            }
+            );
+        </script> -->
+        <!-- Marquiz script end -->
         <title>Шкафы</title>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -401,6 +423,8 @@
         <section class="s-2 f-row" id="quiz">
             <div class="size-wrapper f-col">
                 <h2 class="headline headline_align_center">Рассчитайте стоимость вашего будущего шкафа с точностью до 96%</h2>
+                <div data-marquiz-id="62c6c0faec8a64003f1e15eb"></div>
+                <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '62c6c0faec8a64003f1e15eb', buttonText: 'Пройти тест', bgColor: '#ff9a00', textColor: '#ffffff', rounded: true, shadow: 'rgba(255, 154, 0, 0.5)', blicked: true, buttonOnMobile: true, width: '1025', height: '600'})</script>
             </div>
         </section>
         <section class="s-3 f-row">
@@ -515,19 +539,26 @@
                 <p class="par par_align_center s-4__par">Используем экологичные материалы со сборкой по европейским стандартам</p>
                 <div class="tabs f-row">
                     <div class="tabs__label-container f-col">
-                        <button class="par par_color_black par_weight_bold tab-button" onclick="openCity(event, 'tab01')" id="defaultOpen">Материалы</button>
-                        <button class="par par_color_black par_weight_bold tab-button" onclick="openCity(event, 'tab02')">Фурнитура</button>
+                        <button class="par par_color_black tab-button" onclick="openCity(event, 'tab01')" id="defaultOpen">Материалы</button>
+                        <button class="par par_color_black tab-button" onclick="openCity(event, 'tab02')">Фурнитура</button>
+                        <button class="par par_color_black tab-button" onclick="openCity(event, 'tab03')">Производство</button>
+                        <button class="par par_color_black tab-button" onclick="openCity(event, 'tab04')">Сборка</button>
                     </div>
                     <div class="tabs__body f-row">
                         <div class="tabs__content f-col" id="tab01">
+                            <p class="par">Шкафы-купе, кухни и прочие мебельные конструкции могут быть изготовлены из различных материалов. Выбирая шкаф, вам стоит учесть будущие условия эксплуатации мебели. При изготовлении элементов конструкции может быть использовано стекло, деревянный массив, сталь, пластик, МДФ и ДСП, зеркало.</p>
+        
+                        </div>
+                        <div class="tabs__content f-col tabs__content_status_active" id="tab02">
                             <p class="par">«Blum» - эталон инновационных технологий и качества фурнитуры для корпусной мебели.</p>
                             <P class="par">«Boyard» - одна из крупнейших компаний в России и странах СНГ, которая предлагает качественную и доступную лицевую и функциональную фурнитуру для популярной корпусной мебели под собственным брендом.</P>
                             <p class="par">«Hettich» - это немецкий производитель фурнитуры, одна из самых известных и популярных торговых марок в этом сегменте мебельного производства.</p>
                         </div>
-                        <div class="tabs__content f-col tabs__content_status_active" id="tab02">
-                            <p class="par">«Br» - эталон инновационных технологий и качества фурнитуры для корпусной мебели.</p>
-                            <P class="par">«Boyard» - одна из крупнейших компаний в России и странах СНГ, которая предлагает качественную и доступную лицевую и функциональную фурнитуру для популярной корпусной мебели под собственным брендом.</P>
-                            <p class="par">«Hettich» - это немецкий производитель фурнитуры, одна из самых известных и популярных торговых марок в этом сегменте мебельного производства.</p>
+                        <div class="tabs__content f-col tabs__content_status_active" id="tab03">
+                            <p class="par">Собственное высокотехнологичное производство: соблюдаем европейские стандарты качества, используем высокоточное современное оборудование Немецких и Итальянских марок, на производстве работают опытные узкопрофильные специалисты, знающие своё дело до мелочей.</p>
+                        </div>
+                        <div class="tabs__content f-col tabs__content_status_active" id="tab04">
+                            <p class="par">Сборка осуществляется исключительно профессионалами своего дела: cредний стаж наших сборщиков 6-11 лет, учитываются все нюансы и тонкости сборки, исключено 99,9% типичных ошибок и повреждение поверхностей. Правильная сборка по регламенту обеспечит максимальный срок эксплуатации мебели.</p>
                         </div>
                     </div>
                 </div>
@@ -647,7 +678,7 @@
             <div class="size-wrapper f-col">
                 <h2 class="headline headline_color_black headline_align_center">Так-же, кроме шкафов-купе наша компания<br/>
                     производит шикарные детские кроватки</h2>
-                <a href="https://baybyhome.ru/" class="main-button f-row">
+                <a href="https://baybyhome.ru/" class="main-button f-row" target="_blank">
                     <p class="par">ПОСМОТРЕТЬ МОДЕЛЬНЫЙ РЯД КРОВАТОК</p>
                 </a>
             </div>
