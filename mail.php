@@ -5,8 +5,8 @@
     if (isset($_POST['phone'])) {$phone = $_POST['phone'];		if ($phone == '')	{unset($phone);}}
     //стирание треугольных скобок из полей формы
     // адрес почты куда придет письмо
-    $address="efimigorevi4@mail.ru";
-    $address2="bayby_home@mail.ru ";
+    $address="scarecrowsssssss@gmail.com";
+    //$address2="bayby_home@mail.ru ";
     // текст письма 
     $note_text="Тема : $theme \r\Телефон : $phone ";
     
